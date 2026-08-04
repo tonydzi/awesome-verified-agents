@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use awesome-verified-agents in research or software, please cite it as below."
+title: "Awesome Verified Agents: a curated list of tools that produce evidence about AI agent behaviour"
+type: dataset
+authors:
+  - family-names: Dziatkovskii
+    given-names: Anton
+    orcid: "https://orcid.org/0000-0001-7408-3054"
+    affiliation: "Palo Alto AI Research Lab"
+repository-code: "https://github.com/Palo-Alto-AI-Research-Lab/awesome-verified-agents"
+url: "https://github.com/Palo-Alto-AI-Research-Lab/awesome-verified-agents"
+keywords:
+  - AI agents
+  - verification
+  - attestation
+  - guardrails
+  - observability
+  - awesome list
+abstract: >-
+  A curated list of projects that leave an inspectable artifact behind an AI agent's
+  actions — runtime enforcement that decides before an action runs, tamper-evident
+  records, output verification against sources, benchmarks, tracing, and
+  self-assessment. The inclusion bar is a single question: what artifact does it
+  leave that a human can inspect later? Tools that only steer generation are out of
+  scope. Star counts and last-commit dates are a dated snapshot rather than live
+  badges, and no performance claim is restated that the maintainers have not run.
