@@ -60,6 +60,7 @@ Checking the claim against the source, rather than asking a model whether it loo
 | [guardrails](https://github.com/guardrails-ai/guardrails) | Validators that run over model output and return structured pass/fail per validator | Apache-2.0 | 7235 | 2026-07-29 |
 | [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) | Programmable rails between the app and the model, evaluated per turn | NOASSERTION | 6850 | 2026-08-01 |
 | [verbatim-citation-gate](https://github.com/Palo-Alto-AI-Research-Lab/verbatim-citation-gate) † | Deterministic first stage: every quoted span must appear verbatim in the retrieved context, so an invented quote fails with no model call; survivors go to a burden-of-proof judge. **Known defect:** the normalizer is Latin-only, see issue #1 | MIT | 3 | 2026-08-01 |
+| [verdict-contract](https://github.com/Palo-Alto-AI-Research-Lab/verdict-contract) † | Turns an LLM reviewer's verdict into a process exit status (0 approve / 3 request-changes / 4 contract broken), with the prompt rule and the parser in one file so they cannot drift. Blocking wins from anywhere; approving requires the exact shape. 42 counterexample cases | MIT | 0 | 2026-08-04 |
 
 ## Evaluation and benchmarks
 
