@@ -33,12 +33,12 @@ Authorization lives outside the model loop: the model proposes, something else d
 
 | Project | Evidence it produces | License | ★ | Last commit |
 |---|---|---|---|---|
-| [Adrian](https://github.com/secureagentics/Adrian) | Analyzes tool calls and reasoning traces in-flight; runs in audit or block mode, so each decision is a logged allow/deny | NOASSERTION | 496 | 2026-07-29 |
-| [invariant](https://github.com/invariantlabs-ai/invariant) | Guardrails plus a trace-analysis tool for agent runs | Apache-2.0 | 437 | 2026-01-12 |
-| [tenuo](https://github.com/tenuo-ai/tenuo) | Capability authorization engine: task-scoped warrants with cryptographic attenuation and offline verification — the warrant itself is the artifact | NOASSERTION | 77 | 2026-07-13 |
-| [agent-browser-shield](https://github.com/pixiebrix/agent-browser-shield) | Browser extension, 35+ rules; masks secrets and strips injected instructions before the agent reads the page | NOASSERTION | 32 | 2026-08-01 |
-| [TealTiger](https://github.com/agentguard-ai/tealtiger) | Policy enforcement and cost tracking with structured audit output (SARIF, JUnit XML, JSON) — machine-readable, so CI can fail on it | NOASSERTION | 16 | 2026-08-01 |
-| [SourceryKit](https://github.com/ProvablyAI/sourcerykit) | Hooks the HTTP layer: logs every outbound call and blocks anything off the trusted-endpoint allowlist | NOASSERTION | 15 | 2026-07-28 |
+| [Adrian](https://github.com/secureagentics/Adrian) | Analyzes tool calls and reasoning traces in-flight; runs in audit or block mode, so each decision is a logged allow/deny | Apache-2.0 | 538 | 2026-08-11 |
+| [invariant](https://github.com/invariantlabs-ai/invariant) | Guardrails plus a trace-analysis tool for agent runs | Apache-2.0 | 445 | 2026-01-12 |
+| [tenuo](https://github.com/tenuo-ai/tenuo) | Capability authorization engine: task-scoped warrants with cryptographic attenuation and offline verification — the warrant itself is the artifact | NOASSERTION | 79 | 2026-07-13 |
+| [agent-browser-shield](https://github.com/pixiebrix/agent-browser-shield) | Browser extension, 35+ rules; masks secrets and strips injected instructions before the agent reads the page | NOASSERTION | 33 | 2026-08-15 |
+| [TealTiger](https://github.com/agentguard-ai/tealtiger) | Policy enforcement and cost tracking with structured audit output (SARIF, JUnit XML, JSON) — machine-readable, so CI can fail on it | Apache-2.0 | 24 | 2026-08-14 |
+| [SourceryKit](https://github.com/ProvablyAI/sourcerykit) | Hooks the HTTP layer: logs every outbound call and blocks anything off the trusted-endpoint allowlist | NOASSERTION | 18 | 2026-08-12 |
 | [Shani](https://github.com/kmori-source/shani) | Signed Authorized Decision Object per decision, with replay prevention and a human-in-the-loop approval path | NOASSERTION | 0 | 2026-06-25 |
 
 ## Evidence and attestation
@@ -47,9 +47,9 @@ Records designed so that a later reader can tell whether they were tampered with
 
 | Project | Evidence it produces | License | ★ | Last commit |
 |---|---|---|---|---|
-| [dos-kernel](https://github.com/anthony-chaudhary/dos-kernel) | Verifies an agent's "done" claim against git evidence instead of its self-report; audits commit claims against their own diffs | MIT | 18 | 2026-07-17 |
-| [attestation-envelope-spec](https://github.com/TheColonyCC/attestation-envelope-spec) | A spec, not a tool: typed evidence pointers that structurally exclude self-signed assertions, content-hash pinning, ed25519 sigchains, plus a reference verifier | MIT | 0 | 2026-07-25 |
-| [claude-consensus](https://github.com/Palo-Alto-AI-Research-Lab/claude-consensus) † | Cross-machine agreement protocol (propose / counter / accept / commit) with ACK discipline, so a multi-agent decision has a record independent of any one agent | MIT | 2 | 2026-08-01 |
+| [dos-kernel](https://github.com/anthony-chaudhary/dos-kernel) | Verifies an agent's "done" claim against git evidence instead of its self-report; audits commit claims against their own diffs | MIT | 18 | 2026-08-13 |
+| [attestation-envelope-spec](https://github.com/TheColonyCC/attestation-envelope-spec) | A spec, not a tool: typed evidence pointers that structurally exclude self-signed assertions, content-hash pinning, ed25519 sigchains, plus a reference verifier | MIT | 0 | 2026-08-13 |
+| [claude-consensus](https://github.com/tonydzi/claude-consensus) † | Cross-machine agreement protocol (propose / counter / accept / commit) with ACK discipline, so a multi-agent decision has a record independent of any one agent | MIT | 2 | 2026-08-14 |
 
 ## Output verification
 
@@ -57,10 +57,10 @@ Checking the claim against the source, rather than asking a model whether it loo
 
 | Project | Evidence it produces | License | ★ | Last commit |
 |---|---|---|---|---|
-| [guardrails](https://github.com/guardrails-ai/guardrails) | Validators that run over model output and return structured pass/fail per validator | Apache-2.0 | 7235 | 2026-07-29 |
-| [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) | Programmable rails between the app and the model, evaluated per turn | NOASSERTION | 6850 | 2026-08-01 |
-| [verbatim-citation-gate](https://github.com/Palo-Alto-AI-Research-Lab/verbatim-citation-gate) † | Deterministic first stage: every quoted span must appear verbatim in the retrieved context, so an invented quote fails with no model call; survivors go to a burden-of-proof judge. **Known defect:** the normalizer is Latin-only, see issue #1 | MIT | 3 | 2026-08-01 |
-| [verdict-contract](https://github.com/Palo-Alto-AI-Research-Lab/verdict-contract) † | Turns an LLM reviewer's verdict into a process exit status (0 approve / 3 request-changes / 4 contract broken), with the prompt rule and the parser in one file so they cannot drift. Blocking wins from anywhere; approving requires the exact shape. 42 counterexample cases | MIT | 0 | 2026-08-04 |
+| [guardrails](https://github.com/guardrails-ai/guardrails) | Validators that run over model output and return structured pass/fail per validator | Apache-2.0 | 7289 | 2026-08-14 |
+| [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) | Programmable rails between the app and the model, evaluated per turn | NOASSERTION | 6959 | 2026-08-15 |
+| [verbatim-citation-gate](https://github.com/tonydzi/verbatim-citation-gate) † | Deterministic first stage: every quoted span must appear verbatim in the retrieved context, so an invented quote fails with no model call; survivors go to a burden-of-proof judge. **Known defect:** the normalizer is Latin-only, see issue #1 | MIT | 3 | 2026-08-15 |
+| [verdict-contract](https://github.com/tonydzi/verdict-contract) † | Turns an LLM reviewer's verdict into a process exit status (0 approve / 3 request-changes / 4 contract broken), with the prompt rule and the parser in one file so they cannot drift. Blocking wins from anywhere; approving requires the exact shape. 42 counterexample cases | MIT | 0 | 2026-08-10 |
 
 ## Evaluation and benchmarks
 
@@ -68,14 +68,14 @@ Putting a number on it before it reaches a user.
 
 | Project | Evidence it produces | License | ★ | Last commit |
 |---|---|---|---|---|
-| [promptfoo](https://github.com/promptfoo/promptfoo) | Declarative assertions over prompts, agents and RAG, plus red-team runs — output is a scored matrix you can diff between versions | MIT | 23817 | 2026-08-01 |
-| [openai/evals](https://github.com/openai/evals) | Eval framework and a registry of shared benchmarks | NOASSERTION | 19081 | 2026-04-14 |
-| [deepeval](https://github.com/confident-ai/deepeval) | Metric suite for LLM and RAG outputs, runnable in a test suite | Apache-2.0 | 17321 | 2026-07-31 |
-| [giskard-oss](https://github.com/Giskard-AI/giskard-oss) | Scans an LLM agent for failure classes and produces a report of found issues | Apache-2.0 | 5726 | 2026-07-31 |
-| [inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai) | Evaluation framework from the UK AI Security Institute; solvers and scorers are explicit objects, so a result is reproducible from the eval definition | MIT | 2444 | 2026-07-31 |
-| [AgentLeak](https://github.com/Privatris/AgentLeak) | Benchmark for privacy leakage in multi-agent systems across 7 channels including tool calls, RAG queries and inter-agent messages | NOASSERTION | 26 | 2026-07-01 |
-| [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) | Five-layer execution evidence (replay, screenshots, HTTP traffic, browser actions and agent messages) plus interception results and task scores; it does not certify internal reasoning or real-world outcomes beyond the configured evaluator | Apache-2.0 | 541 | 2026-07-31 |
-| [agent-runtime-integrity-bench](https://github.com/Palo-Alto-AI-Research-Lab/agent-runtime-integrity-bench) † | Deterministic fault-injection scenarios run against real SDKs, distilled from production incidents | MIT | 0 | 2026-08-01 |
+| [promptfoo](https://github.com/promptfoo/promptfoo) | Declarative assertions over prompts, agents and RAG, plus red-team runs — output is a scored matrix you can diff between versions | MIT | 24272 | 2026-08-16 |
+| [openai/evals](https://github.com/openai/evals) | Eval framework and a registry of shared benchmarks | NOASSERTION | 19181 | 2026-04-14 |
+| [deepeval](https://github.com/confident-ai/deepeval) | Metric suite for LLM and RAG outputs, runnable in a test suite | Apache-2.0 | 17616 | 2026-08-13 |
+| [giskard-oss](https://github.com/Giskard-AI/giskard-oss) | Scans an LLM agent for failure classes and produces a report of found issues | Apache-2.0 | 5753 | 2026-08-14 |
+| [inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai) | Evaluation framework from the UK AI Security Institute; solvers and scorers are explicit objects, so a result is reproducible from the eval definition | MIT | 2558 | 2026-08-15 |
+| [AgentLeak](https://github.com/Privatris/AgentLeak) | Benchmark for privacy leakage in multi-agent systems across 7 channels including tool calls, RAG queries and inter-agent messages | NOASSERTION | 29 | 2026-07-01 |
+| [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) | Five-layer execution evidence (replay, screenshots, HTTP traffic, browser actions and agent messages) plus interception results and task scores; it does not certify internal reasoning or real-world outcomes beyond the configured evaluator | Apache-2.0 | 566 | 2026-08-15 |
+| [agent-runtime-integrity-bench](https://github.com/tonydzi/agent-runtime-integrity-bench) † | Deterministic fault-injection scenarios run against real SDKs, distilled from production incidents | MIT | 0 | 2026-08-14 |
 
 ## Observability and tracing
 
@@ -83,9 +83,9 @@ You cannot verify what you cannot see.
 
 | Project | Evidence it produces | License | ★ | Last commit |
 |---|---|---|---|---|
-| [langfuse](https://github.com/langfuse/langfuse) | Traces, evals and metrics for LLM applications, self-hostable | NOASSERTION | 32278 | 2026-07-31 |
-| [phoenix](https://github.com/Arize-ai/phoenix) | Observability and evaluation over recorded traces | NOASSERTION | 10850 | 2026-08-01 |
-| [openllmetry](https://github.com/traceloop/openllmetry) | OpenTelemetry-based instrumentation, so agent traces land in the tooling you already run | Apache-2.0 | 7348 | 2026-07-13 |
+| [langfuse](https://github.com/langfuse/langfuse) | Traces, evals and metrics for LLM applications, self-hostable | NOASSERTION | 33181 | 2026-08-16 |
+| [phoenix](https://github.com/Arize-ai/phoenix) | Observability and evaluation over recorded traces | NOASSERTION | 11071 | 2026-08-16 |
+| [openllmetry](https://github.com/traceloop/openllmetry) | OpenTelemetry-based instrumentation, so agent traces land in the tooling you already run | Apache-2.0 | 7378 | 2026-08-10 |
 
 ## Self-assessment
 
@@ -93,14 +93,14 @@ Before buying anything: score what you already have.
 
 | Project | Evidence it produces | License | ★ | Last commit |
 |---|---|---|---|---|
-| [Agent-Wiz](https://github.com/Repello-AI/Agent-Wiz) | Extracts the agent workflow from LangChain / LangGraph / CrewAI / AutoGen code and runs automated threat modeling over it | Apache-2.0 | 385 | 2025-11-02 |
-| [agent-leash (LEASH-8)](https://github.com/Palo-Alto-AI-Research-Lab/agent-leash) † | 24-statement scored worksheet across 8 control domains, plus the plan-vs-authorize pattern and an approval-design checklist. Docs and templates, no runtime | MIT | 2 | 2026-08-01 |
+| [Agent-Wiz](https://github.com/Repello-AI/Agent-Wiz) | Extracts the agent workflow from LangChain / LangGraph / CrewAI / AutoGen code and runs automated threat modeling over it | Apache-2.0 | 393 | 2025-11-02 |
+| [agent-leash (LEASH-8)](https://github.com/tonydzi/agent-leash) † | 24-statement scored worksheet across 8 control domains, plus the plan-vs-authorize pattern and an approval-design checklist. Docs and templates, no runtime | MIT | 2 | 2026-08-10 |
 
 ---
 
 ## How the numbers here work
 
-- **Stars and last-commit dates were read from the GitHub API on 2026-08-01.** They are a snapshot, not a live badge, and they will drift. If a row is wrong, that is a bug — open an issue.
+- **Stars and last-commit dates were read from the GitHub API on 2026-08-16.** They are a snapshot, not a live badge, and they will drift. If a row is wrong, that is a bug — open an issue.
 - **Last commit is a column on purpose.** A list about verification should not hide the staleness of its own entries. Two rows above are more than six months cold; they stay because the work is still worth reading, and you can see the date and decide.
 - **`NOASSERTION`** means GitHub could not resolve a standard SPDX identifier from the repo, not that the project is unlicensed. Check the repo before you depend on it.
 - **†** marks a project maintained by the same lab that maintains this list. They follow the same inclusion bar as everything else, and they are the smallest entries here by star count — that is visible in the table rather than hidden.
