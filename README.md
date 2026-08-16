@@ -75,6 +75,7 @@ Putting a number on it before it reaches a user.
 | [inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai) | Evaluation framework from the UK AI Security Institute; solvers and scorers are explicit objects, so a result is reproducible from the eval definition | MIT | 2558 | 2026-08-15 |
 | [AgentLeak](https://github.com/Privatris/AgentLeak) | Benchmark for privacy leakage in multi-agent systems across 7 channels including tool calls, RAG queries and inter-agent messages | NOASSERTION | 29 | 2026-07-01 |
 | [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) | Five-layer execution evidence (replay, screenshots, HTTP traffic, browser actions and agent messages) plus interception results and task scores; it does not certify internal reasoning or real-world outcomes beyond the configured evaluator | Apache-2.0 | 566 | 2026-08-15 |
+| [Dr. Bench](https://github.com/EVIGBYEN/DrBench) | 214 expert-curated long-form report tasks with reference bundles and semantic, focus, and retrieval-trustworthiness scores; it does not attest arbitrary agent runs | MIT | 8 | 2026-05-02 |
 | [agent-runtime-integrity-bench](https://github.com/tonydzi/agent-runtime-integrity-bench) † | Deterministic fault-injection scenarios run against real SDKs, distilled from production incidents | MIT | 0 | 2026-08-14 |
 
 ## Observability and tracing
