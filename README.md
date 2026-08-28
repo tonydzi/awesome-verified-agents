@@ -49,7 +49,7 @@ Records designed so that a later reader can tell whether they were tampered with
 |---|---|---|---|---|
 | [dos-kernel](https://github.com/anthony-chaudhary/dos-kernel) | Verifies an agent's "done" claim against git evidence instead of its self-report; audits commit claims against their own diffs | MIT | 18 | 2026-08-13 |
 | [attestation-envelope-spec](https://github.com/TheColonyCC/attestation-envelope-spec) | A spec, not a tool: typed evidence pointers that structurally exclude self-signed assertions, content-hash pinning, ed25519 sigchains, plus a reference verifier | MIT | 0 | 2026-08-13 |
-| [claude-consensus](https://github.com/tonydzi/claude-consensus) † | Cross-machine agreement protocol (propose / counter / accept / commit) with ACK discipline, so a multi-agent decision has a record independent of any one agent | MIT | 2 | 2026-08-14 |
+| [claude-consensus](https://github.com/tonydzi/claw-consensus) † | Cross-machine agreement protocol (propose / counter / accept / commit) with ACK discipline, so a multi-agent decision has a record independent of any one agent | MIT | 2 | 2026-08-14 |
 
 ## Output verification
 
