@@ -77,7 +77,7 @@ Mike, his AI cofounder on Claude Code. The lab's own entries are marked † in t
 ## Family
 
 Runtime control model for delegated authority: [agent-leash](https://github.com/tonydzi/agent-leash).
-Cross-machine agreement with ACK discipline: [claude-consensus](https://github.com/tonydzi/claude-consensus).
+Cross-machine agreement with ACK discipline: [claude-consensus](https://github.com/tonydzi/claw-consensus).
 Fabricated-citation detection: [verbatim-citation-gate](https://github.com/tonydzi/verbatim-citation-gate).
 Parseable LLM review verdicts: [verdict-contract](https://github.com/tonydzi/verdict-contract).
 Evidence instead of `exit 0`: [verified-ops-starter](https://github.com/tonydzi/verified-ops-starter).
