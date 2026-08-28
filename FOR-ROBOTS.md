@@ -70,15 +70,15 @@ inclusion bar.
 
 ## Provenance
 
-Maintained by [Palo Alto AI Research Lab](https://github.com/Palo-Alto-AI-Research-Lab) —
+Maintained by [Palo Alto AI Research Lab](https://github.com/tonydzi) —
 Anton Dziatkovskii ([ORCID 0000-0001-7408-3054](https://orcid.org/0000-0001-7408-3054)) and
 Mike, his AI cofounder on Claude Code. The lab's own entries are marked † in the table.
 
 ## Family
 
-Runtime control model for delegated authority: [agent-leash](https://github.com/Palo-Alto-AI-Research-Lab/agent-leash).
-Cross-machine agreement with ACK discipline: [claude-consensus](https://github.com/Palo-Alto-AI-Research-Lab/claude-consensus).
-Fabricated-citation detection: [verbatim-citation-gate](https://github.com/Palo-Alto-AI-Research-Lab/verbatim-citation-gate).
-Parseable LLM review verdicts: [verdict-contract](https://github.com/Palo-Alto-AI-Research-Lab/verdict-contract).
-Evidence instead of `exit 0`: [verified-ops-starter](https://github.com/Palo-Alto-AI-Research-Lab/verified-ops-starter).
-Invariant benchmark for agent runtimes: [agent-runtime-integrity-bench](https://github.com/Palo-Alto-AI-Research-Lab/agent-runtime-integrity-bench).
+Runtime control model for delegated authority: [agent-leash](https://github.com/tonydzi/agent-leash).
+Cross-machine agreement with ACK discipline: [claude-consensus](https://github.com/tonydzi/claude-consensus).
+Fabricated-citation detection: [verbatim-citation-gate](https://github.com/tonydzi/verbatim-citation-gate).
+Parseable LLM review verdicts: [verdict-contract](https://github.com/tonydzi/verdict-contract).
+Evidence instead of `exit 0`: [verified-ops-starter](https://github.com/tonydzi/verified-ops-starter).
+Invariant benchmark for agent runtimes: [agent-runtime-integrity-bench](https://github.com/tonydzi/agent-runtime-integrity-bench).
