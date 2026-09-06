@@ -76,6 +76,7 @@ Putting a number on it before it reaches a user.
 | [AgentLeak](https://github.com/Privatris/AgentLeak) | Benchmark for privacy leakage in multi-agent systems across 7 channels including tool calls, RAG queries and inter-agent messages | NOASSERTION | 29 | 2026-07-01 |
 | [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) | Five-layer execution evidence (replay, screenshots, HTTP traffic, browser actions and agent messages) plus interception results and task scores; it does not certify internal reasoning or real-world outcomes beyond the configured evaluator | Apache-2.0 | 566 | 2026-08-15 |
 | [Dr. Bench](https://github.com/EVIGBYEN/DrBench) | 214 expert-curated long-form report tasks with reference bundles and semantic, focus, and retrieval-trustworthiness scores; it does not attest arbitrary agent runs | MIT | 8 | 2026-05-02 |
+| [YYLO Benchmark](https://github.com/yylo-dev/yylo-benchmark) | Longitudinal evaluation and immutable evidence for agent runs: each candidate runs in a private fresh-repository workspace and the initial workspace receipt, post-execution repository manifest, evaluator provenance and terminal state form one exact linkage; it does not dispatch candidates or judges itself — the selected harness owns process/session execution | MIT | 1 | 2026-09-02 |
 | [agent-runtime-integrity-bench](https://github.com/tonydzi/agent-runtime-integrity-bench) † | Deterministic fault-injection scenarios run against real SDKs, distilled from production incidents | MIT | 0 | 2026-08-14 |
 
 ## Observability and tracing
