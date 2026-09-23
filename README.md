@@ -128,7 +128,7 @@ demo — and it runs on its own: nothing here phones home to the rest.
 
 **See how the whole thing fits together → [SYSTEM.md](https://github.com/tonydzi/tonydzi/blob/main/SYSTEM.md)**
 
-Its closest neighbours in the **in public** layer: [`cofounder`](https://github.com/tonydzi/cofounder) · [`the-journey`](https://github.com/tonydzi/the-journey) · [`clawrush`](https://github.com/tonydzi/clawrush)
+Its closest neighbours in the **in public** layer: [`cofounder`](https://github.com/tonydzi/cofounder) · [`agent-control-plane-casebook`](https://github.com/tonydzi/agent-control-plane-casebook) · [`the-journey`](https://github.com/tonydzi/the-journey)
 
 <!--ecosystem-map:end-->
 
