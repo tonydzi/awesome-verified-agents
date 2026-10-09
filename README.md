@@ -90,6 +90,7 @@ You cannot verify what you cannot see.
 | [langfuse](https://github.com/langfuse/langfuse) | Traces, evals and metrics for LLM applications, self-hostable | NOASSERTION | 33181 | 2026-08-16 |
 | [phoenix](https://github.com/Arize-ai/phoenix) | Observability and evaluation over recorded traces | NOASSERTION | 11071 | 2026-08-16 |
 | [openllmetry](https://github.com/traceloop/openllmetry) | OpenTelemetry-based instrumentation, so agent traces land in the tooling you already run | Apache-2.0 | 7378 | 2026-08-10 |
+| [Tale](https://github.com/tale-project/tale) | Agent-workspace automation runs retain node status, resolved inputs/outputs and connector-write effects for inspection. **Boundary:** records can expire or be deleted and do not independently prove delivery to an external service | MIT | 32 | 2026-10-08 |
 
 ## Self-assessment
 
