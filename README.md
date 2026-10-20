@@ -51,6 +51,7 @@ Records designed so that a later reader can tell whether they were tampered with
 | [attestation-envelope-spec](https://github.com/TheColonyCC/attestation-envelope-spec) | A spec, not a tool: typed evidence pointers that structurally exclude self-signed assertions, content-hash pinning, ed25519 sigchains, plus a reference verifier | MIT | 0 | 2026-08-13 |
 | [claude-consensus](https://github.com/tonydzi/claw-consensus) † | Cross-machine agreement protocol (propose / counter / accept / commit) with ACK discipline, so a multi-agent decision has a record independent of any one agent | MIT | 2 | 2026-08-14 |
 | [proofbundle](https://github.com/b7n0de/proofbundle) | Signed, portable receipts for AI evaluations and reviews. Verify offline which key signed the evidence and whether it has changed, without access to the original system (Ed25519 over canonical JSON, RFC 6962 Merkle inclusion, optional SD-JWT selective disclosure, in-toto statement export). **Boundary:** establishes evidence integrity, not whether the result is correct or the evaluation sound | MIT | 2 | 2026-09-20 |
+| [centrol](https://github.com/baitelmal/centrol) | Local flight recorder for coding agents: tool calls, file mutations and shell commands go to a hash-chained ledger the agent has no write path to; `centrol-verify` is a separate binary that re-derives the hash rule offline without importing the writer's code | Apache-2.0 | 2 | 2026-10-19 |
 
 ## Output verification
 
