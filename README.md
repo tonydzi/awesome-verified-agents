@@ -33,6 +33,7 @@ Authorization lives outside the model loop: the model proposes, something else d
 
 | Project | Evidence it produces | License | ★ | Last commit |
 |---|---|---|---|---|
+| [HOL Guard](https://hol.org/guard) | Records local allow/block/approval decision receipts for supported coding-agent actions; hook coverage varies, and it does not provide OS isolation | Apache-2.0 | 1044 | 2026-11-01 |
 | [Adrian](https://github.com/secureagentics/Adrian) | Analyzes tool calls and reasoning traces in-flight; runs in audit or block mode, so each decision is a logged allow/deny | Apache-2.0 | 538 | 2026-08-11 |
 | [invariant](https://github.com/invariantlabs-ai/invariant) | Guardrails plus a trace-analysis tool for agent runs | Apache-2.0 | 445 | 2026-01-12 |
 | [tenuo](https://github.com/tenuo-ai/tenuo) | Capability authorization engine: task-scoped warrants with cryptographic attenuation and offline verification — the warrant itself is the artifact | NOASSERTION | 79 | 2026-07-13 |
