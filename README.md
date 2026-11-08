@@ -93,7 +93,7 @@ You cannot verify what you cannot see.
 | [langfuse](https://github.com/langfuse/langfuse) | Traces, evals and metrics for LLM applications, self-hostable | NOASSERTION | 33181 | 2026-08-16 |
 | [phoenix](https://github.com/Arize-ai/phoenix) | Observability and evaluation over recorded traces | NOASSERTION | 11071 | 2026-08-16 |
 | [openllmetry](https://github.com/traceloop/openllmetry) | OpenTelemetry-based instrumentation, so agent traces land in the tooling you already run | Apache-2.0 | 7378 | 2026-08-10 |
-| [agent-qa](https://vostride.com) ([source](https://github.com/vostride/agent-qa)) | Web, Android and iOS QA runs retain verdicts, step outcomes, screenshots and evidence documents; memidex memory and reviewable self-improvement preserve working procedures | FSL-1.1-ALv2 | 855 | 2026-11-07 |
+| [agent-qa](https://vostride.com) ([source](https://github.com/vostride/agent-qa)) | Web, Android and iOS QA runs retain verdicts, step outcomes, screenshots and evidence documents; memidex memory and reviewable self-improvement preserve working procedures. **Boundary:** the artifacts cover the recorded journey only; they do not certify the whole application as bug-free | FSL-1.1-ALv2 | 855 | 2026-11-07 |
 | [Tale](https://github.com/tale-project/tale) | Agent-workspace automation runs retain node status, resolved inputs/outputs and connector-write effects for inspection. **Boundary:** records can expire or be deleted and do not independently prove delivery to an external service | MIT | 32 | 2026-10-08 |
 
 ## Self-assessment
