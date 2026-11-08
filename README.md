@@ -84,6 +84,8 @@ Putting a number on it before it reaches a user.
 | [YYLO Benchmark](https://github.com/yylo-dev/yylo-benchmark) | Longitudinal evaluation and hash-linked, tamper-evident evidence for agent runs: each candidate runs in a private fresh-repository workspace and the initial workspace receipt, post-execution repository manifest, evaluator provenance and terminal state form one exact linkage; it does not dispatch candidates or judges itself — the selected harness owns process/session execution | MIT | 1 | 2026-09-10 |
 | [agent-runtime-integrity-bench](https://github.com/tonydzi/agent-runtime-integrity-bench) † | Deterministic fault-injection scenarios run against real SDKs, distilled from production incidents | MIT | 0 | 2026-08-14 |
 
+| [Agent Retry Rodeo](https://github.com/RishabhPande/agent-retry-rodeo) | saved JSON traces, final-state assertions, completion-claim checks and replay/compare reports | MIT | 0 | 2026-11-07 |
+
 ## Observability and tracing
 
 You cannot verify what you cannot see.
