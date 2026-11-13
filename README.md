@@ -1,4 +1,59 @@
-# Awesome Verified Agents [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+# awesome-verified-agents
+
+A curated list of tools that leave behind proof of what an AI agent actually did, instead of just hoping it behaves.
+
+**Who it's for:** people who build or run AI agents and want checkable evidence: gates, signed records, output checks, benchmarks, traces.
+**What you get:** a sorted list of projects in six sections, each with the artifact it produces, its license, stars and last-commit date.
+
+## Quick start
+1. Open the list: https://github.com/tonydzi/awesome-verified-agents
+2. Pick the section that matches your problem (for example "Runtime enforcement" or "Output verification").
+3. Open a project from its row and check the evidence column and the last-commit date before you depend on it.
+
+**Done when:** you have picked a project and know what artifact it leaves for you to inspect later.
+
+Want to add a project? The test is one question: what artifact does it leave behind that a human can inspect later? Read `CONTRIBUTING.md` first. One project per pull request.
+
+> Want an AI agent to do it for you? Paste this to Claude Code / Codex / Cursor:
+> "Read the 'For AI agents' section of https://github.com/tonydzi/awesome-verified-agents and set it up for me."
+
+## For AI agents
+
+### Preconditions
+- This is a list, not software. There is nothing to install. You need git, and `gh` (GitHub CLI) or an API token only if you open a pull request.
+- Ask the human: whether they want to use the list or add a project, and for an add, which project and whether it is theirs.
+
+### Use
+To use the list, read `README.md`. Each section is a table with columns: Project, Evidence it produces, License, Stars, Last commit. A dagger (†) marks projects from the same lab as this list. To contribute:
+```
+git clone https://github.com/tonydzi/awesome-verified-agents
+cd awesome-verified-agents
+```
+Then follow `CONTRIBUTING.md`: add one row in the format of the target section (link, evidence, license, stars, last-commit date), plus one sentence on what the project does not do.
+
+### Configure
+Nothing to configure. For a new row, get stars and last-commit from the GitHub API on the day you submit, for example `gh api repos/<owner>/<repo> --jq '.stargazers_count,.pushed_at'`. Do not copy them from another list. Ask the human for the project's owner/repo.
+
+### Verify
+There is no test suite or link checker in this repo. Cheap checks you can run from the repo root:
+```
+grep -c '^| \[' README.md
+grep '^| \[' README.md | awk -F'|' 'NF!=7{print "BAD:" substr($0,1,40); b=1} END{print "bad=" b+0}'
+```
+Expected: the first prints the row count (37 on 2026-11-13); the second prints `bad=0`, meaning every row has exactly 5 columns (real run 2026-11-13: yes). Also search the README for the project name and URL to rule out a duplicate.
+
+### Uninstall / rollback
+Nothing is installed. Delete the cloned folder. An unmerged pull request can be closed.
+
+### Rules for the agent
+- One project per pull request. Say in the PR if the project is the human's own.
+- Do not restate a project's performance claims as verified. Link to the run that produced them.
+- Do not add a project only because it has many stars. The bar is the inspectable artifact.
+- Do not open a pull request, or comment on one, without the human's explicit yes.
+
+## Details
+
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 
 > Tools that produce **evidence** about what an AI agent actually did — not tools that hope it behaves.
 
