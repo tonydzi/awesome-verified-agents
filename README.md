@@ -40,6 +40,7 @@ There is no test suite or link checker in this repo. Cheap checks you can run fr
 grep -c '^| \[' README.md
 grep '^| \[' README.md | awk -F'|' 'NF!=7{print "BAD:" substr($0,1,40); b=1} END{print "bad=" b+0}'
 ```
+On Windows without grep and awk, this does the same: `python -c "r=[l for l in open('README.md',encoding='utf-8') if l.startswith('| [')];print(len(r));print('bad=',sum(l.count('|')!=6 for l in r))"` (a 5-column row has 6 pipes, assuming no `|` inside a cell).
 Expected: the first prints the row count (37 on 2026-11-13); the second prints `bad=0`, meaning every row has exactly 5 columns (real run 2026-11-13: yes). Also search the README for the project name and URL to rule out a duplicate.
 
 ### Uninstall / rollback
