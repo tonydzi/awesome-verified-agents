@@ -140,6 +140,7 @@ Putting a number on it before it reaches a user.
 | [Dr. Bench](https://github.com/EVIGBYEN/DrBench) | 214 expert-curated long-form report tasks with reference bundles and semantic, focus, and retrieval-trustworthiness scores; it does not attest arbitrary agent runs | MIT | 8 | 2026-05-02 |
 | [YYLO Benchmark](https://github.com/yylo-dev/yylo-benchmark) | Longitudinal evaluation and hash-linked, tamper-evident evidence for agent runs: each candidate runs in a private fresh-repository workspace and the initial workspace receipt, post-execution repository manifest, evaluator provenance and terminal state form one exact linkage; it does not dispatch candidates or judges itself — the selected harness owns process/session execution | MIT | 1 | 2026-09-10 |
 | [agent-runtime-integrity-bench](https://github.com/tonydzi/agent-runtime-integrity-bench) † | Deterministic fault-injection scenarios run against real SDKs, distilled from production incidents | MIT | 0 | 2026-08-14 |
+| [ARQUÍA-EVAL-001 v0.1.2](https://github.com/argensite/arquia-eval-001/releases/tag/v0.1.2) | Offline synthetic tests for permission revocation between tool dispatch and effect commit, with JSON reports, exit statuses, negative-control failures and SHA-256 provenance records | MIT | 0 | 2026-11-20 |
 
 | [Agent Retry Rodeo](https://github.com/RishabhPande/agent-retry-rodeo) | saved JSON traces, final-state assertions, completion-claim checks and replay/compare reports | MIT | 0 | 2026-11-07 |
 
